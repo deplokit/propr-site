@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — PROPR Manufacturing Co.</title>
+  <meta name="description" content="Get in touch with PROPR Manufacturing Co. for orders, sizing questions, and support.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="img/propr-logo.png" alt="PROPR" style="height:36px;width:auto;">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="product.html" class="nav-cta">Product</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- CONTACT FORMS -->
+  <section class="contact-section">
+    <div class="container">
+
+      <!-- Mobile toggle -->
+      <div class="form-toggle reveal">
+        <button class="form-toggle-btn active" data-target="general">General Questions</button>
+        <button class="form-toggle-btn" data-target="inquiry">Product Inquiries</button>
+      </div>
+
+      <div class="dual-form-grid reveal">
+
+        <!-- General Questions -->
+        <div class="contact-form-card form-panel active" id="form-general">
+          <span class="eyebrow">Support &amp; Info</span>
+          <h2>General Questions</h2>
+          <div class="divider"></div>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="gen-name">Name</label>
+                <input type="text" id="gen-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="gen-email">Email</label>
+                <input type="email" id="gen-email" name="email" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="gen-phone">Phone #</label>
+                <input type="tel" id="gen-phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="gen-order">Order # <span style="font-weight:400;color:var(--gray-mid);text-transform:none;letter-spacing:0;">(if applicable)</span></label>
+                <input type="text" id="gen-order" name="order">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group full">
+                <label for="gen-message">How Can We Help?</label>
+                <textarea id="gen-message" name="message" rows="6" placeholder="Questions about your order, warranty, or anything else — let us know." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <!-- Product Inquiries -->
+        <div class="contact-form-card contact-form-card--dark form-panel" id="form-inquiry">
+          <span class="eyebrow" style="color:var(--gold-light);">Order a PROPR</span>
+          <h2>Product Inquiries</h2>
+          <div class="divider" style="background:rgba(255,255,255,.15);"></div>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inq-name">Name</label>
+                <input type="text" id="inq-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="inq-email">Email</label>
+                <input type="email" id="inq-email" name="email" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inq-phone">Phone #</label>
+                <input type="tel" id="inq-phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="inq-shaft">Shaft Size</label>
+                <select id="inq-shaft" name="shaft_size">
+                  <option value="" disabled selected>Select shaft size</option>
+                  <option value="1.75">1.75 inch</option>
+                  <option value="2.00">2.00 inch</option>
+                  <option value="2.25">2.25 inch</option>
+                  <option value="2.50">2.50 inch</option>
+                  <option value="2.75">2.75 inch</option>
+                  <option value="3.00">3.00 inch</option>
+                  <option value="3.50">3.50 inch</option>
+                  <option value="4.00">4.00 inch</option>
+                  <option value="4.50">4.50 inch</option>
+                  <option value="5.00">5.00 inch</option>
+                  <option value="6.00">6.00 inch</option>
+                  <option value="6.50">6.50 inch</option>
+                  <option value="unsure">Not sure yet</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inq-qty">Number of Tools Needed</label>
+                <input type="number" id="inq-qty" name="quantity" min="1" value="1">
+              </div>
+              <div class="form-group">
+                <label for="inq-boat">Boat Size</label>
+                <select id="inq-boat" name="boat_size">
+                  <option value="" disabled selected>Select boat size</option>
+                  <option value="10-20">10–20 ft</option>
+                  <option value="20-35">20–35 ft</option>
+                  <option value="35-60">35–60 ft</option>
+                  <option value="60-120">60–120 ft</option>
+                  <option value="120-250">120–250 ft</option>
+                  <option value="250-400">250–400 ft</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group full">
+                <label for="inq-message">Anything Else?</label>
+                <textarea id="inq-message" name="message" rows="5" placeholder="Tell us about your vessel, your timeline, or any special requirements."></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-outline">Submit Inquiry</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REFUND POLICY -->
+  <section class="policy-section" id="refund">
+    <div class="container reveal">
+      <span class="eyebrow" style="text-align:center;display:block;">Policies</span>
+      <h2>Refund Policy</h2>
+      <div class="policy-columns">
+        <div>
+          <p>If you are not completely satisfied with your PROPR tool, you may request a return within 30 days of delivery. The tool must be in its original condition, unused, and returned in the original packaging. Shipping costs for returns are the responsibility of the customer unless the return is due to a manufacturing defect or shipping error on our part.</p>
+        </div>
+        <div>
+          <p>To initiate a return, please contact us using the form above with your order number and a brief description of the reason. Refunds will be issued to the original payment method within 10 business days of receiving the returned item. Custom-order or specially threaded units are non-refundable. Please reach out with any questions — we're here to help.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARRANTY -->
+  <section class="warranty-section" id="warranty">
+    <div class="container reveal">
+      <span class="eyebrow" style="text-align:center;display:block;">Coverage</span>
+      <h2>Warranty</h2>
+      <p>Every PROPR tool is covered by a manufacturer warranty against defects in materials and workmanship under normal use conditions. This warranty covers the structural integrity of the disc, threading, and machined surfaces. It does not cover damage resulting from misuse, modification, or use with incompatible shaft sizes. To submit a warranty claim, contact our team with your order number, photographs of the issue, and a description of how the tool was being used. We will evaluate each claim individually and provide a replacement or repair at our discretion.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo"><img src="img/propr-logo.png" alt="PROPR" style="height:28px;width:auto;filter:brightness(10);"></div>
+          <p class="footer-tagline">Precision-engineered propeller tools for marine professionals.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <a href="contact.html#warranty">Warranty</a>
+          <a href="contact.html#refund">Refund Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 PROPR Manufacturing Co. All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
